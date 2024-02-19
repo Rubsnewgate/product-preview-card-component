@@ -22,6 +22,8 @@
 // Product Information Section
 .product-info {
 	padding: 25px;
+	background-color: $white;
+	border-radius: 0 15px 15px 0;
 }
 .product__description {
 	@include flexbox(column, center, start, 20px);
@@ -31,6 +33,7 @@
 	margin: 0;
 	font-size: $md-size;
 	font-weight: $semi-bold;
+	letter-spacing: 3px;
 	color: $grayish-blue;
 }
 .product__title {
@@ -50,18 +53,18 @@
 .product__price {
 	@include flexbox(row, start, center);
 	margin-bottom: 20px;
-	h3 {
-		margin: 0;
-		font-family: $secondary-font;
-		font-size: $lg-size;
-		color: $dark-cyan;
-	}
-	span {
+	.original-price {
 		margin-left: 20px;
 		font-family: $primary-font;
 		font-size: $sm-size;
 		color: $grayish-blue;
 		text-decoration: line-through;
+	}
+	.final-price {
+		margin: 0;
+		font-family: $secondary-font;
+		font-size: $lg-size;
+		color: $dark-cyan;
 	}
 }
 // Buy Button
